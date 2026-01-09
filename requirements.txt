@@ -1,0 +1,11 @@
+# ====== Core Python Packages ======
+numpy
+pandas
+scikit-learn
+joblib
+
+# ====== Flask Web Framework ======
+Flask
+
+# ====== Optional (for production stability) ======
+gunicorn

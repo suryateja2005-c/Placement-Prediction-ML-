@@ -1,0 +1,16 @@
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import StandardScaler
+import joblib
+
+# Load your training data
+data = pd.read_csv('placement-dataset-1.csv')
+X = data[['cgpa', 'iq']]
+
+# Create and fit scaler
+scaler = StandardScaler()
+scaler.fit(X)
+
+# Save the scaler
+joblib.dump(scaler, 'scaler.joblib')
+print("✓ Scaler saved as 'scaler.joblib'")

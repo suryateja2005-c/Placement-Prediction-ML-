@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .result {
+            font-size: 24px;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .placed {
+            background-color: #d4edda;
+            color: #155724;
+            border: 2px solid #c3e6cb;
+        }
+        .not-placed {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 2px solid #f5c6cb;
+        }
+        .btn {
+            background-color: #667eea;
+            color: white;
+            padding: 12px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+        .btn:hover {
+            background-color: #5568d3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Prediction Result</h1>
+        
+        {% if prediction == 1 %}
+        <div class="result placed">
+            <h2>✅ Congratulations!</h2>
+            <p>You are likely to <strong>GET PLACED</strong></p>
+            <p>Keep up the good work!</p>
+        </div>
+        {% else %}
+        <div class="result not-placed">
+            <h2>⚠️ Attention!</h2>
+            <p>You may <strong>NOT GET PLACED</strong></p>
+            <p>Focus on improving your CGPA and skills!</p>
+        </div>
+        {% endif %}
+        
+        <a href="/prediction" class="btn">Try Again</a>
+        <a href="/" class="btn">Back to Home</a>
+    </div>
+</body>
+</html>
