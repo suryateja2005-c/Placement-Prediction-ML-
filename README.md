@@ -41,20 +41,8 @@ Web Framework	Flask
 Model Storage	Joblib
 Frontend	HTML, CSS
 Dataset	Kaggle – College Placement Dataset
-placement_prediction/
-│
-├── app.py
-├── placement_model.pkl
-├── scaler.pkl
-│
-├── templates/
-│   ├── home.html
-│   ├── index.html
-│   └── result.html
-│
-└── static/
-    └── css/
-        └── style.css
+
+<img width="455" height="590" alt="Screenshot 2026-01-09 103700" src="https://github.com/user-attachments/assets/ece97855-d320-448e-80b4-8752d668e332" />
 
 ⚙️ Installation & Setup
 Step 1: Clone the Repository
