@@ -41,7 +41,6 @@ Web Framework	Flask
 Model Storage	Joblib
 Frontend	HTML, CSS
 Dataset	Kaggle – College Placement Dataset
-📂 Project Structure
 placement_prediction/
 │
 ├── app.py
